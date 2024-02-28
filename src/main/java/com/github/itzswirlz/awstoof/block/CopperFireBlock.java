@@ -23,7 +23,6 @@ public class CopperFireBlock extends AbstractFireBlock {
     // TODO: check we got every block
     public static boolean isCopperBase(BlockState state) {
         return state.getBlock().equals(Blocks.COPPER_BLOCK) ||
-        state.getBlock().equals(Blocks.COPPER_ORE) ||
         state.getBlock().equals(Blocks.CUT_COPPER) ||
         state.getBlock().equals(Blocks.CUT_COPPER_SLAB) ||
         state.getBlock().equals(Blocks.CUT_COPPER_STAIRS) ||

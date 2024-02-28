@@ -8,5 +8,6 @@ public class AWSTOOFMod implements ModInitializer {
 	@Override
 	public void onInitialize(ModContainer mod) {
 		CopperFireBlocks.registerCopperFireBlocks(mod);
+		RedstoneFireBlocks.registerRedstoneFireBlocks(mod);
 	}
 }
