@@ -31,13 +31,12 @@ public class AWSTOOFBlocks {
         return 10;
     }).sounds(BlockSoundGroup.WOOL).pistonBehavior(PistonBehavior.DESTROY));
 
-    // TODO: special particle?
     public static final TorchBlock COPPER_TORCH = new TorchBlock(QuiltBlockSettings.create().noCollision().breakInstantly().luminance((state) -> {
         return 10;
-     }).sounds(BlockSoundGroup.WOOD).pistonBehavior(PistonBehavior.DESTROY), ParticleTypes.FLAME);
+     }).sounds(BlockSoundGroup.WOOD).pistonBehavior(PistonBehavior.DESTROY), AWSTOOFParticles.COPPER_FIRE_FLAME);
     public static final TorchBlock COPPER_WALL_TORCH = new WallTorchBlock(QuiltBlockSettings.create().noCollision().breakInstantly().luminance((state) -> {
         return 10;
-     }).sounds(BlockSoundGroup.WOOD).dropsLike(COPPER_TORCH).pistonBehavior(PistonBehavior.DESTROY), ParticleTypes.FLAME);
+     }).sounds(BlockSoundGroup.WOOD).dropsLike(COPPER_TORCH).pistonBehavior(PistonBehavior.DESTROY), AWSTOOFParticles.COPPER_FIRE_FLAME);
 
      public static final LanternBlock COPPER_LANTERN = new LanternBlock(QuiltBlockSettings.create().mapColor(MapColor.METAL).solid().requiresTool().strength(3.5F).sounds(BlockSoundGroup.LANTERN).luminance((state) -> {
         return 10;
