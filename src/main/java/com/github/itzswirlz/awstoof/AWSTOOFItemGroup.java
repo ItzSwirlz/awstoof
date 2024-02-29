@@ -17,6 +17,7 @@ public class AWSTOOFItemGroup {
         .icon(() -> new ItemStack(Items.FLINT_AND_STEEL))
         .entries((context, entries) -> {
             entries.addItem(AWSTOOFItems.COPPER_TORCH);
+            entries.addItem(AWSTOOFBlocks.COPPER_LANTERN);
         }).build();
 
     public static void registerAWSTOOFItemGroup(ModContainer mod) {
