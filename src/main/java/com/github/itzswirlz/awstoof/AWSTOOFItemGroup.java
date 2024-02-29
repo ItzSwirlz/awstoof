@@ -18,6 +18,7 @@ public class AWSTOOFItemGroup {
         .entries((context, entries) -> {
             entries.addItem(AWSTOOFItems.COPPER_TORCH);
             entries.addItem(AWSTOOFBlocks.COPPER_LANTERN);
+            entries.addItem(AWSTOOFItems.COPPER_CAMPFIRE);
         }).build();
 
     public static void registerAWSTOOFItemGroup(ModContainer mod) {

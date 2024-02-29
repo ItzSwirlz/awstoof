@@ -13,6 +13,7 @@ public class AWSTOOFModClient implements ClientModInitializer {
     public void onInitializeClient(ModContainer mod) {
         ParticleFactoryRegistry.getInstance().register(AWSTOOFParticles.COPPER_FIRE_FLAME, FlameParticle.Factory::new);
 
+        BlockRenderLayerMap.put(RenderLayer.getCutout(), AWSTOOFBlocks.COPPER_CAMPFIRE);
         BlockRenderLayerMap.put(RenderLayer.getCutout(), AWSTOOFBlocks.COPPER_FIRE);
         BlockRenderLayerMap.put(RenderLayer.getCutout(), AWSTOOFBlocks.COPPER_LANTERN);
         BlockRenderLayerMap.put(RenderLayer.getCutout(), AWSTOOFBlocks.COPPER_TORCH);
