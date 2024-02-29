@@ -16,7 +16,7 @@ public class RedstoneFireBlock extends AbstractFireBlock {
         return isRedstoneBase(world.getBlockState(pos.down()));
     }
 
-    private boolean isRedstoneBase(BlockState state) {
+    public static boolean isRedstoneBase(BlockState state) {
         return state.getBlock().equals(Blocks.REDSTONE_BLOCK);
     }
 
