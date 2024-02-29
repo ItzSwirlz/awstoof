@@ -7,10 +7,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.WorldView;
 
 public class RedstoneFireBlock extends AbstractFireBlock {
-
     public RedstoneFireBlock(Settings settings) {
         super(settings, 1.0F);
-
     }
 
     @Override
@@ -26,5 +24,4 @@ public class RedstoneFireBlock extends AbstractFireBlock {
     protected boolean isFlammable(BlockState state) {
         return true;
     }
-    
 }
