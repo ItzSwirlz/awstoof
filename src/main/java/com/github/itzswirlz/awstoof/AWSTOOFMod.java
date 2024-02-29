@@ -4,7 +4,6 @@ import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
 
 public class AWSTOOFMod implements ModInitializer {
-
 	@Override
 	public void onInitialize(ModContainer mod) {
 		AWSTOOFParticles.registerFireParticles(mod);
@@ -13,5 +12,7 @@ public class AWSTOOFMod implements ModInitializer {
 		AWSTOOFItems.registerCopperBlockItems(mod);
 
 		AWSTOOFBlocks.registerRedstoneFireBlocks(mod);
+
+		AWSTOOFItemGroup.registerAWSTOOFItemGroup(mod);
 	}
 }
