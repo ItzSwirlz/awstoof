@@ -1,0 +1,10 @@
+{
+    "variants": {
+      "hanging=false": {
+        "model": "sowesettheoreonfire:block/copper_lantern"
+      },
+      "hanging=true": {
+        "model": "sowesettheoreonfire:block/copper_lantern_hanging"
+      }
+    }
+}

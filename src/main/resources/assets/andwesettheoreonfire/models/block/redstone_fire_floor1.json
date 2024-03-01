@@ -1,7 +1,0 @@
-{
-    "parent": "minecraft:block/template_fire_floor",
-    "textures": {
-      "fire": "andwesettheoreonfire:block/redstone_fire_1"
-    }
-}
-  
