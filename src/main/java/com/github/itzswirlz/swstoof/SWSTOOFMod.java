@@ -12,6 +12,7 @@ public class SWSTOOFMod implements ModInitializer {
 		SWSTOOFItems.registerCopperBlockItems(mod);
 
 		SWSTOOFBlocks.registerIronFireBlocks(mod);
+		SWSTOOFItems.registerIronBlockItems(mod);
 
 		SWSTOOFBlocks.registerRedstoneFireBlocks(mod);
 

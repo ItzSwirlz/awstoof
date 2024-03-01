@@ -19,6 +19,8 @@ public class SWSTOOFItemGroup {
             entries.addItem(SWSTOOFItems.COPPER_TORCH);
             entries.addItem(SWSTOOFBlocks.COPPER_LANTERN);
             entries.addItem(SWSTOOFItems.COPPER_CAMPFIRE);
+
+            entries.addItem(SWSTOOFItems.IRON_TORCH);
         }).build();
 
     public static void registerswstoofItemGroup(ModContainer mod) {

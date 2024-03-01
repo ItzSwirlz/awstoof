@@ -57,6 +57,14 @@ public class SWSTOOFBlocks {
     public static final IronFireBlock IRON_FIRE = new IronFireBlock(QuiltBlockSettings.create().mapColor(MapColor.FIRE).replaceable().noCollision().breakInstantly().luminance((state) -> {
         return 10;
     }).sounds(BlockSoundGroup.WOOL).pistonBehavior(PistonBehavior.DESTROY));
+
+    public static final TorchBlock IRON_TORCH = new TorchBlock(QuiltBlockSettings.create().noCollision().breakInstantly().luminance((state) -> {
+        return 10;
+     }).sounds(BlockSoundGroup.WOOD).pistonBehavior(PistonBehavior.DESTROY), SWSTOOFParticles.IRON_FIRE_FLAME);
+    public static final TorchBlock IRON_WALL_TORCH = new WallTorchBlock(QuiltBlockSettings.create().noCollision().breakInstantly().luminance((state) -> {
+        return 10;
+     }).sounds(BlockSoundGroup.WOOD).dropsLike(IRON_TORCH).pistonBehavior(PistonBehavior.DESTROY), SWSTOOFParticles.IRON_FIRE_FLAME);
+
     /*
      * ------------
      * END IRON FIRE
@@ -89,6 +97,8 @@ public class SWSTOOFBlocks {
 
     public static void registerIronFireBlocks(ModContainer mod) {
         Registry.register(Registries.BLOCK, new Identifier(mod.metadata().id(), "iron_fire"), IRON_FIRE);
+        Registry.register(Registries.BLOCK, new Identifier(mod.metadata().id(), "iron_torch"), IRON_TORCH);
+        Registry.register(Registries.BLOCK, new Identifier(mod.metadata().id(), "iron_wall_torch"), IRON_WALL_TORCH);
     }
 
     public static void registerRedstoneFireBlocks(ModContainer mod) {
