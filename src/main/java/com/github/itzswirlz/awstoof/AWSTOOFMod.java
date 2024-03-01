@@ -11,6 +11,8 @@ public class AWSTOOFMod implements ModInitializer {
 		AWSTOOFBlocks.registerCopperFireBlocks(mod);
 		AWSTOOFItems.registerCopperBlockItems(mod);
 
+		AWSTOOFBlocks.registerIronFireBlocks(mod);
+
 		AWSTOOFBlocks.registerRedstoneFireBlocks(mod);
 
 		AWSTOOFItemGroup.registerAWSTOOFItemGroup(mod);

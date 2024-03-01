@@ -4,6 +4,7 @@ import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.qsl.block.extensions.api.QuiltBlockSettings;
 
 import com.github.itzswirlz.awstoof.block.CopperFireBlock;
+import com.github.itzswirlz.awstoof.block.IronFireBlock;
 import com.github.itzswirlz.awstoof.block.RedstoneFireBlock;
 
 import net.minecraft.block.Blocks;
@@ -46,6 +47,21 @@ public class AWSTOOFBlocks {
       *  END COPPER FIRE
       *  ---------------
       */
+      
+    /*
+     * ----------------
+     * IRON FIRE
+     * ----------------
+     */
+    // TODO: particle
+    public static final IronFireBlock IRON_FIRE = new IronFireBlock(QuiltBlockSettings.create().mapColor(MapColor.FIRE).replaceable().noCollision().breakInstantly().luminance((state) -> {
+        return 10;
+    }).sounds(BlockSoundGroup.WOOL).pistonBehavior(PistonBehavior.DESTROY));
+    /*
+     * ------------
+     * END IRON FIRE
+     * -----------
+     */
 
     /*
      * -----------------
@@ -69,6 +85,10 @@ public class AWSTOOFBlocks {
         Registry.register(Registries.BLOCK, new Identifier(mod.metadata().id(), "copper_wall_torch"), COPPER_WALL_TORCH);
         Registry.register(Registries.BLOCK, new Identifier(mod.metadata().id(), "copper_lantern"), COPPER_LANTERN);
         Registry.register(Registries.BLOCK, new Identifier(mod.metadata().id(), "copper_campfire"), COPPER_CAMPFIRE);
+    }
+
+    public static void registerIronFireBlocks(ModContainer mod) {
+        Registry.register(Registries.BLOCK, new Identifier(mod.metadata().id(), "iron_fire"), IRON_FIRE);
     }
 
     public static void registerRedstoneFireBlocks(ModContainer mod) {

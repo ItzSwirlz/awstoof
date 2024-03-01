@@ -2,6 +2,7 @@ package com.github.itzswirlz.awstoof.mixin;
 
 import com.github.itzswirlz.awstoof.AWSTOOFBlocks;
 import com.github.itzswirlz.awstoof.block.CopperFireBlock;
+import com.github.itzswirlz.awstoof.block.IronFireBlock;
 import com.github.itzswirlz.awstoof.block.RedstoneFireBlock;
 
 import net.minecraft.block.*;
@@ -18,6 +19,8 @@ public class AbstractFireBlockMixin {
 	private static void injected(BlockView world, BlockPos pos, CallbackInfoReturnable<BlockState> cir) {
 		if (CopperFireBlock.isCopperBase(world.getBlockState(pos.down()))) {
 			cir.setReturnValue(AWSTOOFBlocks.COPPER_FIRE.getDefaultState());
+		} else if (IronFireBlock.isIronBase(world.getBlockState(pos.down()))) {
+			cir.setReturnValue(AWSTOOFBlocks.IRON_FIRE.getDefaultState());
 		} else if (RedstoneFireBlock.isRedstoneBase(world.getBlockState(pos.down()))) {
 			cir.setReturnValue(AWSTOOFBlocks.REDSTONE_FIRE.getDefaultState());
 		}

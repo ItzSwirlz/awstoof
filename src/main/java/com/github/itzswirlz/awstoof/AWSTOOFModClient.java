@@ -19,6 +19,8 @@ public class AWSTOOFModClient implements ClientModInitializer {
         BlockRenderLayerMap.put(RenderLayer.getCutout(), AWSTOOFBlocks.COPPER_TORCH);
         BlockRenderLayerMap.put(RenderLayer.getCutout(), AWSTOOFBlocks.COPPER_WALL_TORCH);
 
+        BlockRenderLayerMap.put(RenderLayer.getCutout(), AWSTOOFBlocks.IRON_FIRE);
+
         BlockRenderLayerMap.put(RenderLayer.getCutout(), AWSTOOFBlocks.REDSTONE_FIRE);
     }
     
