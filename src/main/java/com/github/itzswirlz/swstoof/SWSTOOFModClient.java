@@ -20,6 +20,7 @@ public class SWSTOOFModClient implements ClientModInitializer {
         BlockRenderLayerMap.put(RenderLayer.getCutout(), SWSTOOFBlocks.COPPER_TORCH);
         BlockRenderLayerMap.put(RenderLayer.getCutout(), SWSTOOFBlocks.COPPER_WALL_TORCH);
 
+        BlockRenderLayerMap.put(RenderLayer.getCutout(), SWSTOOFBlocks.IRON_CAMPFIRE);
         BlockRenderLayerMap.put(RenderLayer.getCutout(), SWSTOOFBlocks.IRON_FIRE);
         BlockRenderLayerMap.put(RenderLayer.getCutout(), SWSTOOFBlocks.IRON_TORCH);
         BlockRenderLayerMap.put(RenderLayer.getCutout(), SWSTOOFBlocks.IRON_WALL_TORCH);
