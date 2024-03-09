@@ -7,12 +7,14 @@ import com.github.itzswirlz.swstoof.block.CopperFireBlock;
 import com.github.itzswirlz.swstoof.block.IronFireBlock;
 import com.github.itzswirlz.swstoof.block.RedstoneFireBlock;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.CampfireBlock;
 import net.minecraft.block.LanternBlock;
 import net.minecraft.block.MapColor;
 import net.minecraft.block.TorchBlock;
 import net.minecraft.block.WallTorchBlock;
+import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.registry.Registries;
@@ -107,5 +109,10 @@ public class SWSTOOFBlocks {
 
     public static void registerRedstoneFireBlocks(ModContainer mod) {
         Registry.register(Registries.BLOCK, new Identifier(mod.metadata().id(), "redstone_fire"), REDSTONE_FIRE);
+    }
+
+    // Without this, traits like the smoke particles and being able to cook won't work for our new campfires.
+    public static void updateCampfireBlockEntityType() {
+        BlockEntityType.CAMPFIRE.addSupportedBlocks(new Block[]{COPPER_CAMPFIRE, IRON_CAMPFIRE});
     }
 }
