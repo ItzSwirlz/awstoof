@@ -28,8 +28,7 @@ public class SWSTOOFBlocks {
      *  COPPER FIRE
      *  -----------
      */
-    // TODO: map color and consider 'oxidized copper fire'?
-    public static final CopperFireBlock COPPER_FIRE = new CopperFireBlock(QuiltBlockSettings.create().mapColor(MapColor.FIRE).replaceable().noCollision().breakInstantly().luminance((state) -> {
+    public static final CopperFireBlock COPPER_FIRE = new CopperFireBlock(QuiltBlockSettings.create().mapColor(MapColor.WARPED_NYLIUM).replaceable().noCollision().breakInstantly().luminance((state) -> {
         return 10;
     }).sounds(BlockSoundGroup.WOOL).pistonBehavior(PistonBehavior.DESTROY));
 
@@ -55,8 +54,7 @@ public class SWSTOOFBlocks {
      * IRON FIRE
      * ----------------
      */
-    // TODO: particle
-    public static final IronFireBlock IRON_FIRE = new IronFireBlock(QuiltBlockSettings.create().mapColor(MapColor.FIRE).replaceable().noCollision().breakInstantly().luminance((state) -> {
+    public static final IronFireBlock IRON_FIRE = new IronFireBlock(QuiltBlockSettings.create().mapColor(MapColor.GOLD).replaceable().noCollision().breakInstantly().luminance((state) -> {
         return 10;
     }).sounds(BlockSoundGroup.WOOL).pistonBehavior(PistonBehavior.DESTROY));
 
