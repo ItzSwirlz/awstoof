@@ -16,6 +16,7 @@ public class SWSTOOFItems {
     public static final WallStandingBlockItem COPPER_TORCH = new WallStandingBlockItem(SWSTOOFBlocks.COPPER_TORCH, SWSTOOFBlocks.COPPER_WALL_TORCH, new QuiltItemSettings(), Direction.DOWN);
 
     public static final BlockItem IRON_CAMPFIRE = new BlockItem(SWSTOOFBlocks.IRON_CAMPFIRE, new QuiltItemSettings());
+    public static final BlockItem IRON_LANTERN = new BlockItem(SWSTOOFBlocks.IRON_LANTERN, new QuiltItemSettings());
     public static final WallStandingBlockItem IRON_TORCH = new WallStandingBlockItem(SWSTOOFBlocks.IRON_TORCH, SWSTOOFBlocks.IRON_WALL_TORCH, new QuiltItemSettings(), Direction.DOWN);
 
     public static void registerCopperBlockItems(ModContainer mod) {
@@ -26,6 +27,7 @@ public class SWSTOOFItems {
 
     public static void registerIronBlockItems(ModContainer mod) {
         Registry.register(Registries.ITEM, new Identifier(mod.metadata().id(), "iron_campfire"), IRON_CAMPFIRE);
+        Registry.register(Registries.ITEM, new Identifier(mod.metadata().id(), "iron_lantern"), IRON_LANTERN);
         Registry.register(Registries.ITEM, new Identifier(mod.metadata().id(), "iron_torch"), IRON_TORCH);
     }
 }

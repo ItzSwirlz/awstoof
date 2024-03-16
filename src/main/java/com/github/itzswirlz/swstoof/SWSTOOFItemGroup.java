@@ -21,6 +21,7 @@ public class SWSTOOFItemGroup {
             entries.addItem(SWSTOOFItems.COPPER_CAMPFIRE);
 
             entries.addItem(SWSTOOFItems.IRON_TORCH);
+            entries.addItem(SWSTOOFItems.IRON_LANTERN);
             entries.addItem(SWSTOOFItems.IRON_CAMPFIRE);
         }).build();
 

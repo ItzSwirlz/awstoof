@@ -64,7 +64,9 @@ public class SWSTOOFBlocks {
     public static final TorchBlock IRON_WALL_TORCH = new WallTorchBlock(QuiltBlockSettings.create().noCollision().breakInstantly().luminance((state) -> {
         return 10;
      }).sounds(BlockSoundGroup.WOOD).dropsLike(IRON_TORCH).pistonBehavior(PistonBehavior.DESTROY), SWSTOOFParticles.IRON_FIRE_FLAME);
-    
+    public static final LanternBlock IRON_LANTERN = new LanternBlock(QuiltBlockSettings.create().mapColor(MapColor.METAL).solid().requiresTool().strength(3.5F).sounds(BlockSoundGroup.LANTERN).luminance((state) -> {
+        return 10;
+    }).nonOpaque().pistonBehavior(PistonBehavior.DESTROY));
     public static final CampfireBlock IRON_CAMPFIRE = new CampfireBlock(false, 1, QuiltBlockSettings.create().mapColor(MapColor.PODZOL).instrument(NoteBlockInstrument.BASS).strength(2.0F).sounds(BlockSoundGroup.WOOD).luminance(Blocks.createLightLevelFromLitBlockState(10)).nonOpaque().lavaIgnitable());
 
 
@@ -103,6 +105,7 @@ public class SWSTOOFBlocks {
         Registry.register(Registries.BLOCK, new Identifier(mod.metadata().id(), "iron_fire"), IRON_FIRE);
         Registry.register(Registries.BLOCK, new Identifier(mod.metadata().id(), "iron_torch"), IRON_TORCH);
         Registry.register(Registries.BLOCK, new Identifier(mod.metadata().id(), "iron_wall_torch"), IRON_WALL_TORCH);
+        Registry.register(Registries.BLOCK, new Identifier(mod.metadata().id(), "iron_lantern"), IRON_LANTERN);
     }
 
     public static void registerRedstoneFireBlocks(ModContainer mod) {
