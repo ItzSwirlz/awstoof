@@ -23,6 +23,8 @@ public class SWSTOOFItemGroup {
             entries.addItem(SWSTOOFItems.IRON_TORCH);
             entries.addItem(SWSTOOFItems.IRON_LANTERN);
             entries.addItem(SWSTOOFItems.IRON_CAMPFIRE);
+
+            entries.addItem(SWSTOOFItems.REDSTONE_LANTERN);
         }).build();
 
     public static void registerswstoofItemGroup(ModContainer mod) {

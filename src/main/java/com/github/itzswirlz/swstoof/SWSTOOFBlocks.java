@@ -84,6 +84,9 @@ public class SWSTOOFBlocks {
     public static final RedstoneFireBlock REDSTONE_FIRE = new RedstoneFireBlock(QuiltBlockSettings.create().mapColor(MapColor.FIRE).replaceable().noCollision().breakInstantly().luminance((state) -> {
         return 7;
     }).sounds(BlockSoundGroup.WOOL).pistonBehavior(PistonBehavior.DESTROY));
+    public static final LanternBlock REDSTONE_LANTERN = new LanternBlock(QuiltBlockSettings.create().mapColor(MapColor.METAL).solid().requiresTool().strength(3.5F).sounds(BlockSoundGroup.LANTERN).luminance((state) -> {
+        return 7;
+    }).nonOpaque().pistonBehavior(PistonBehavior.DESTROY));
     /*
      * -----------------
      * END REDSTONE FIRE
@@ -110,6 +113,7 @@ public class SWSTOOFBlocks {
 
     public static void registerRedstoneFireBlocks(ModContainer mod) {
         Registry.register(Registries.BLOCK, new Identifier(mod.metadata().id(), "redstone_fire"), REDSTONE_FIRE);
+        Registry.register(Registries.BLOCK, new Identifier(mod.metadata().id(), "redstone_lantern"), REDSTONE_LANTERN);
     }
 
     // Without this, traits like the smoke particles and being able to cook won't work for our new campfires.
