@@ -1,7 +1,5 @@
 package com.github.itzswirlz.swstoof;
 
-import org.quiltmc.loader.api.ModContainer;
-
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -13,21 +11,21 @@ import net.minecraft.util.Identifier;
 
 public class SWSTOOFItemGroup {
     public static final ItemGroup swstoof_ITEM_GROUP = FabricItemGroup.builder()
-        .name(Text.literal("So We Set the Ore on Fire"))
+        .displayName(Text.literal("So We Set the Ore on Fire"))
         .icon(() -> new ItemStack(Items.FLINT_AND_STEEL))
         .entries((context, entries) -> {
-            entries.addItem(SWSTOOFItems.COPPER_TORCH);
-            entries.addItem(SWSTOOFBlocks.COPPER_LANTERN);
-            entries.addItem(SWSTOOFItems.COPPER_CAMPFIRE);
+            entries.add(SWSTOOFItems.COPPER_TORCH);
+            entries.add(SWSTOOFBlocks.COPPER_LANTERN);
+            entries.add(SWSTOOFItems.COPPER_CAMPFIRE);
 
-            entries.addItem(SWSTOOFItems.IRON_TORCH);
-            entries.addItem(SWSTOOFItems.IRON_LANTERN);
-            entries.addItem(SWSTOOFItems.IRON_CAMPFIRE);
+            entries.add(SWSTOOFItems.IRON_TORCH);
+            entries.add(SWSTOOFItems.IRON_LANTERN);
+            entries.add(SWSTOOFItems.IRON_CAMPFIRE);
 
-            entries.addItem(SWSTOOFItems.REDSTONE_LANTERN);
+            entries.add(SWSTOOFItems.REDSTONE_LANTERN);
         }).build();
 
-    public static void registerswstoofItemGroup(ModContainer mod) {
-        Registry.register(Registries.ITEM_GROUP, new Identifier(mod.metadata().id(), "sowesettheoreonfire"), swstoof_ITEM_GROUP);
+    public static void registerswstoofItemGroup() {
+        Registry.register(Registries.ITEM_GROUP, Identifier.of(SWSTOOFMod.MOD_ID, "sowesettheoreonfire"), swstoof_ITEM_GROUP);
     }
 }

@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "sowesettheoreonfire",
+	"version": "${version}",
+	"name": "So We Set the Ore on Fire",
+	"description": "A short description of your mod.",
+	"authors": [
+	  "ItzSwirlz"
+	],
+	"contact": {
+	  "homepage": "https://example.com/",
+	  "issues": "https://github.com/QuiltMC/quilt-template-mod/issues",
+	  "sources": "https://github.com/QuiltMC/quilt-template-mod"
+	},
+	"icon": "assets/sowesettheoreonfire/icon.png",
+	"environment": "*",
+	"entrypoints": {
+	  "main": [
+		"com.github.itzswirlz.swstoof.SWSTOOFMod"
+	  ],
+	  "client": [
+		"com.github.itzswirlz.swstoof.SWSTOOFModClient"
+	  ]
+	},
+	"mixins": [
+		"sowesettheoreonfire.mixins.json"
+	],
+	"depends": {
+	  "fabricloader": ">=0.16.9",
+	  "minecraft": "~1.21.4",
+	  "java": ">=21",
+	  "fabric-api": "*"
+	}
+}

@@ -1,23 +1,24 @@
 package com.github.itzswirlz.swstoof;
 
-import org.quiltmc.loader.api.ModContainer;
-import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
+import net.fabricmc.api.ModInitializer;
 
 public class SWSTOOFMod implements ModInitializer {
+	public static final String MOD_ID = "sowesettheoreonfire";
+
 	@Override
-	public void onInitialize(ModContainer mod) {
-		SWSTOOFParticles.registerFireParticles(mod);
+	public void onInitialize() {
+		SWSTOOFParticles.registerFireParticles();
 
-		SWSTOOFBlocks.registerCopperFireBlocks(mod);
-		SWSTOOFItems.registerCopperBlockItems(mod);
+		SWSTOOFBlocks.registerCopperFireBlocks();
+		SWSTOOFItems.registerCopperBlockItems();
 
-		SWSTOOFBlocks.registerIronFireBlocks(mod);
-		SWSTOOFItems.registerIronBlockItems(mod);
+		SWSTOOFBlocks.registerIronFireBlocks();
+		SWSTOOFItems.registerIronBlockItems();
 
-		SWSTOOFBlocks.registerRedstoneFireBlocks(mod);
-		SWSTOOFItems.registerRedstoneBlockItems(mod);
+		SWSTOOFBlocks.registerRedstoneFireBlocks();
+		SWSTOOFItems.registerRedstoneBlockItems();
 
-		SWSTOOFItemGroup.registerswstoofItemGroup(mod);
+		SWSTOOFItemGroup.registerswstoofItemGroup();
 
 		SWSTOOFBlocks.updateCampfireBlockEntityType();
 	}

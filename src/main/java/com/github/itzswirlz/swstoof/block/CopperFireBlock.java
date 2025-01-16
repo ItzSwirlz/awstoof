@@ -1,5 +1,7 @@
 package com.github.itzswirlz.swstoof.block;
 
+import com.mojang.serialization.MapCodec;
+
 import net.minecraft.block.AbstractFireBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -9,9 +11,15 @@ import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
 
 public class CopperFireBlock extends AbstractFireBlock {
+    public static final MapCodec<CopperFireBlock> CODEC = createCodec(CopperFireBlock::new);
+
     // TODO: Do we want copper fires to oxidize?
     public CopperFireBlock(Settings settings) {
         super(settings, 1.0F);
+    }
+
+    public MapCodec<CopperFireBlock> getCodec() {
+        return CODEC;
     }
 
     // This is deprecated (in AbstractBlock) but its needed to ensure if the block below the fire breaks, we remove it.

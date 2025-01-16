@@ -1,9 +1,9 @@
 {
-    "block.sowesettheoreonfire.copper_campfire": "Copper Campfire",
-    "block.sowesettheoreonfire.copper_lantern": "Copper Lantern",
-    "block.sowesettheoreonfire.copper_torch": "Copper Torch",
-    "block.sowesettheoreonfire.iron_campfire": "Iron Campfire",
-    "block.sowesettheoreonfire.iron_lantern": "Iron Lantern",
-    "block.sowesettheoreonfire.iron_torch": "Iron Torch",
-    "block.sowesettheoreonfire.redstone_lantern": "Redstone Lantern"
+    "item.sowesettheoreonfire.copper_campfire": "Copper Campfire",
+    "item.sowesettheoreonfire.copper_lantern": "Copper Lantern",
+    "item.sowesettheoreonfire.copper_torch": "Copper Torch",
+    "item.sowesettheoreonfire.iron_campfire": "Iron Campfire",
+    "item.sowesettheoreonfire.iron_lantern": "Iron Lantern",
+    "item.sowesettheoreonfire.iron_torch": "Iron Torch",
+    "item.sowesettheoreonfire.redstone_lantern": "Redstone Lantern"
 }
