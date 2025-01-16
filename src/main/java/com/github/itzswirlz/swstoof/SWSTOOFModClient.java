@@ -28,7 +28,8 @@ public class SWSTOOFModClient implements ClientModInitializer {
             SWSTOOFBlocks.IRON_WALL_TORCH,
 
             SWSTOOFBlocks.REDSTONE_FIRE,
-            SWSTOOFBlocks.REDSTONE_LANTERN
+            SWSTOOFBlocks.REDSTONE_LANTERN,
+            SWSTOOFBlocks.REDSTONE_CAMPFIRE
         });
     }
     

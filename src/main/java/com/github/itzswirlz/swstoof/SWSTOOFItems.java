@@ -21,6 +21,7 @@ public class SWSTOOFItems {
     public static final RegistryKey<Item> IRON_LANTERN_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(SWSTOOFMod.MOD_ID, "iron_lantern"));
     public static final RegistryKey<Item> IRON_TORCH_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(SWSTOOFMod.MOD_ID, "iron_torch"));
 
+    public static final RegistryKey<Item> REDSTONE_CAMPFIRE_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(SWSTOOFMod.MOD_ID, "redstone_campfire"));
     public static final RegistryKey<Item> REDSTONE_LANTERN_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(SWSTOOFMod.MOD_ID, "redstone_lantern"));
 
     public static final BlockItem COPPER_CAMPFIRE = new BlockItem(SWSTOOFBlocks.COPPER_CAMPFIRE, new Item.Settings().registryKey(COPPER_CAMPFIRE_KEY));
@@ -31,6 +32,7 @@ public class SWSTOOFItems {
     public static final BlockItem IRON_LANTERN = new BlockItem(SWSTOOFBlocks.IRON_LANTERN, new Item.Settings().registryKey(IRON_LANTERN_KEY));
     public static final VerticallyAttachableBlockItem IRON_TORCH = new VerticallyAttachableBlockItem(SWSTOOFBlocks.IRON_TORCH, SWSTOOFBlocks.IRON_WALL_TORCH, Direction.DOWN, new Item.Settings().registryKey(IRON_TORCH_KEY));
 
+    public static final BlockItem REDSTONE_CAMPFIRE = new BlockItem(SWSTOOFBlocks.REDSTONE_CAMPFIRE, new Item.Settings().registryKey(REDSTONE_CAMPFIRE_KEY));
     public static final BlockItem REDSTONE_LANTERN = new BlockItem(SWSTOOFBlocks.REDSTONE_LANTERN, new Item.Settings().registryKey(REDSTONE_LANTERN_KEY));
 
     public static void registerCopperBlockItems() {
@@ -46,6 +48,7 @@ public class SWSTOOFItems {
     }
 
     public static void registerRedstoneBlockItems() {
+        Registry.register(Registries.ITEM, Identifier.of(SWSTOOFMod.MOD_ID, "redstone_campfire"), REDSTONE_CAMPFIRE);
         Registry.register(Registries.ITEM, Identifier.of(SWSTOOFMod.MOD_ID, "redstone_lantern"), REDSTONE_LANTERN);
     }
 }
