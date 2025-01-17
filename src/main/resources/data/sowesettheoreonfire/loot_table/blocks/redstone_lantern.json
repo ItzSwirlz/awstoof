@@ -2,7 +2,7 @@
     "type": "minecraft:block",
     "pools": [
       {
-        "bonus_rolls": 0,
+        "bonus_rolls": 0.0,
         "conditions": [
           {
             "condition": "minecraft:survives_explosion"
@@ -11,11 +11,11 @@
         "entries": [
           {
             "type": "minecraft:item",
-            "name": "sowesettheoreonfire:copper_torch"
+            "name": "sowesettheoreonfire:redstone_lantern"
           }
         ],
-        "rolls": 1
+        "rolls": 1.0
       }
     ],
-    "random_sequence": "sowesettheoreonfire:block/copper_torch"
+    "random_sequence": "sowesettheoreonfire:blocks/redstone_lantern"
   }
