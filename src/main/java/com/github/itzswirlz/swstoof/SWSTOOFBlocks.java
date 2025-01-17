@@ -1,12 +1,9 @@
 package com.github.itzswirlz.swstoof;
 
-import org.spongepowered.include.com.google.common.base.Function;
-
 import com.github.itzswirlz.swstoof.block.CopperFireBlock;
 import com.github.itzswirlz.swstoof.block.IronFireBlock;
 import com.github.itzswirlz.swstoof.block.RedstoneFireBlock;
 
-import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.CampfireBlock;
@@ -17,9 +14,6 @@ import net.minecraft.block.WallTorchBlock;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.block.piston.PistonBehavior;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
